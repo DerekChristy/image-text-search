@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:orientation="vertical" android:layout_height="match_parent" android:elevation="16dp">
+
+    <EditText
+        android:id="@+id/textBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_edit_text_background"
+
+        android:hint="Type a word to search"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="Search"
+        android:id="@+id/browse"
+        android:onClick="browse2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ListView android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
